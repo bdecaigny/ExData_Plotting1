@@ -1,4 +1,5 @@
-# quite bizar, I know. But without it, I get values as high as 14 for Sub_metering_2
+# quite bizar to import everything as character, I know. 
+# But without it, I get values as high as 14 for Sub_metering_2
 # casting as character first and then explicitly converting to numeric solves this
 classes <- c("character","character","character","character","character","character","character","character","character")
 data <- read.csv("./household_power_consumption.txt", header=TRUE, sep =";", colClasses = classes)

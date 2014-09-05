@@ -1,5 +1,6 @@
-# quite bizar, I know. But without it, the period in Global_active_power
-#is not interpreted correctly (mutliplying everything with 1000)
+# quite bizar to import everything as character, I know. 
+# But without it, the period in Global_active_power
+# is not interpreted correctly (mutliplying everything with 1000)
 # casting as character first and then explicitly converting to numeric solves this
 classes <- c("character","character","character","character","character","character","character","character","character")
 data <- read.csv("./household_power_consumption.txt", header=TRUE, sep =";", colClasses = classes)
